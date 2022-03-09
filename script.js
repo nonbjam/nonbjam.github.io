@@ -1,3 +1,4 @@
+'use strict';
 let a1b2c3d4;
 var a1b2c3d22 = 0;
 let a1b2c3d5;
@@ -33,8 +34,8 @@ function a1b2c3d31(ele){
 	
 	a1b2c3d5 = document.getElementById("bb").value.replace(/ /g,"");
 	
-	let a1b2c3d21 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,0];
-	let a1b2c3d20 = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","$"];
+	const a1b2c3d21 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,0];
+	const a1b2c3d20 = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","$"];
 	
 	let a1b2c3d6;
 	a1b2c3d6 = a1b2c3d5.split("");
