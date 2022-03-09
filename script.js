@@ -9,6 +9,23 @@ var scale = screen.width / siteWidth;
 //document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
 document.body.style.zoom=1.5;this.blur();
 
+const a1b2c3d21 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,0];
+const a1b2c3d20 = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","$"];
+let a1b2c3d6;
+let a1b2c3d7;
+let a1b2c3d8;
+let a1b2c3d9;
+let a1b2c3d13 = ""; //
+var a1b2c3d25;
+var a1b2c3d26;
+let a1b2c3d12;
+let a1b2c3d11;
+let a1b2c3d15 = ""; //
+var a1b2c3d23;
+let a1b2c3d14 = ""; //
+var a1b2c3d24;
+let a1b2c3d10;
+
 document.getElementById("aa").disabled = true;
 document.getElementById("bb").focus();
 
@@ -34,14 +51,14 @@ function a1b2c3d31(ele){
 	
 	a1b2c3d5 = document.getElementById("bb").value.replace(/ /g,"");
 	
-	const a1b2c3d21 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,0];
-	const a1b2c3d20 = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","$"];
+	//const a1b2c3d21 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,0];
+	//const a1b2c3d20 = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","$"];
 	
-	let a1b2c3d6;
+	//let a1b2c3d6;
 	a1b2c3d6 = a1b2c3d5.split("");
 	
-	let a1b2c3d7;
-	let a1b2c3d8;
+	//let a1b2c3d7;
+	//let a1b2c3d8;
 	
 	if (document.getElementById("bb").value != "") {
 		if ( a1b2c3d20.indexOf(a1b2c3d6[0]) == -1) {
@@ -55,17 +72,19 @@ function a1b2c3d31(ele){
 	
 	a1b2c3d22 = a1b2c3d21[a1b2c3d7] + a1b2c3d21[a1b2c3d8];
 				
-	let a1b2c3d9;
+	//let a1b2c3d9;
 	a1b2c3d9 = a1b2c3d4.split("");
 	
-	let a1b2c3d13 = ""; //
-	
-	var a1b2c3d25 = 0;
-	var a1b2c3d26 = 0;
+	console.log(a1b2c3d9);
+	//let a1b2c3d13 = ""; //
+	a1b2c3d13 = "";
+	a1b2c3d25 = 0;
+	a1b2c3d26 = 0;
 	while (a1b2c3d25 < a1b2c3d4.length) {
 		while (a1b2c3d26 < a1b2c3d20.length) {
 			if ( a1b2c3d9[a1b2c3d25] == a1b2c3d20[a1b2c3d26] ) {
 				a1b2c3d13 += a1b2c3d21[a1b2c3d26].toString();
+				console.log("i " + a1b2c3d25 + " j " + a1b2c3d26 + " encode_index " + a1b2c3d21[a1b2c3d26] + " site to num " + a1b2c3d13);
 				a1b2c3d26 = 0;
 				break; 
 			}
@@ -74,17 +93,18 @@ function a1b2c3d31(ele){
 		a1b2c3d25++;
 	}
 	
-	let a1b2c3d12;
+	//let a1b2c3d12;
 	a1b2c3d12 = a1b2c3d13.replace("undefined","");
 	
-	let a1b2c3d11 = a1b2c3d12.split("");
+	//let a1b2c3d11 = a1b2c3d12.split("");
 	a1b2c3d11 = a1b2c3d12.split("");
 	
-	let a1b2c3d15 = ""; //
-
-	var a1b2c3d23 = 0;
-	let a1b2c3d14 = ""; //
-	var a1b2c3d24 = 0;
+	//let a1b2c3d15 = ""; //
+	a1b2c3d15 = "";
+	a1b2c3d23 = 0;
+	//let a1b2c3d14 = ""; //
+	a1b2c3d14 = "";
+	a1b2c3d24 = 0;
 	while (a1b2c3d23 < a1b2c3d12.length) {
 		if (a1b2c3d23 % 2 == 1) {
 			a1b2c3d14 = (((parseInt(a1b2c3d11[a1b2c3d23]) + a1b2c3d4.length) % 10) + a1b2c3d22) % 26;
@@ -102,7 +122,7 @@ function a1b2c3d31(ele){
 		a1b2c3d23++;
 	}
 
-	let a1b2c3d10;
+	//let a1b2c3d10;
 	a1b2c3d10 = a1b2c3d15.replace("undefined","");
 
 	if (a1b2c3d10.length > 16) {
